@@ -51,10 +51,10 @@ Create a `.env` file in the root folder which is todo and set this thing.
 
 ```
 PORT = 5000
-JWT_SECRET = 'abc123'
+SECRET_KEY = 'abc123' (jwt secret key)
 SQ=your mysql password set here
 
-Change the JWT_SECRET  to what you want
+Change the SECRET_KEY  to what you want
 For SQ your type your own mysql password
 
 ```

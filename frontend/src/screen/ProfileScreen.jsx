@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
-import {Form,Button,Row,Col} from 'react-bootstrap';
-import {useDispatch,useSelector} from 'react-redux';
+import {Form,Button} from 'react-bootstrap';
+import {useSelector} from 'react-redux';
 import FormContainer from '../components/FormContainer';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
@@ -9,12 +9,6 @@ import Loader from '../components/Loader';
 
 
 const ProfileScreen = ()=>{
-    const [email,setEmail] = useState('');
-    const [name,setName] = useState('');
-    
-    
-    //console.log(redirect);
-    const dispatch = useDispatch();
     
     const {isLoading,isError,message,user} = useSelector(state=>state.userAuth);
     
