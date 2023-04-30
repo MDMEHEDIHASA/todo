@@ -21,7 +21,9 @@
 ## Mysql Setup
 
 ```
-CREATE DATABASE todo
+CREATE DATABASE todo;
+
+use todo;
 
 CREATE TABLE `todo`.`store` (
   `id` INT  UNSIGNED NOT NULL  AUTO_INCREMENT,
